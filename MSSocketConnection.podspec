@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/MSSocketConnection"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Simon Heys" => "si@simonheys.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MSSocketConnection.git", :tag => s.version.to_s }
+  s.author           = { "Simon Heys" => "simon@makeandship.co.uk" }
+  s.source           = { :git => "git@github.com:makeandship/MSSocketConnection.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -35,4 +35,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CocoaLumberjack', '~> 1.9'
 end

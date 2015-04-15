@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MSSocketConnection_SHFileFunctionLevelFormatter : NSObject
+@end
+@implementation PodsDummy_Pods_MSSocketConnection_SHFileFunctionLevelFormatter
+@end

@@ -1,0 +1,38 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Expecta (0.4.0)
+  - MSSocketConnection (0.1.0)
+  - SHFileFunctionLevelFormatter (0.1.0):
+    - CocoaLumberjack (~> 1.9)
+  - Specta (0.5.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.9)
+  - Expecta
+  - MSSocketConnection (from `../`)
+  - SHFileFunctionLevelFormatter (from `git@bitbucket.org:simonheys/shfilefunctionlevelformatter.git`)
+  - Specta
+
+EXTERNAL SOURCES:
+  MSSocketConnection:
+    :path: "../"
+  SHFileFunctionLevelFormatter:
+    :git: git@bitbucket.org:simonheys/shfilefunctionlevelformatter.git
+
+CHECKOUT OPTIONS:
+  SHFileFunctionLevelFormatter:
+    :commit: 00c78ef9c3e7106e9e4be64d1b0892f2d19f0367
+    :git: git@bitbucket.org:simonheys/shfilefunctionlevelformatter.git
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  Expecta: 392a6b5bfb9f4097e47dd8064d9b732079490332
+  MSSocketConnection: 2d4aa3b97177d145d116747b771fab9f538794ef
+  SHFileFunctionLevelFormatter: 69d80847b1884e2fbc780d3fc781e25f2b05b22b
+  Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
+
+COCOAPODS: 0.36.3

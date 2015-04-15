@@ -2,10 +2,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'MSSocketConnection', :exclusive => true do
   pod "MSSocketConnection", :path => "../"
+  pod 'CocoaLumberjack', '~> 1.9'
+  pod 'SHFileFunctionLevelFormatter', :git => 'git@bitbucket.org:simonheys/shfilefunctionlevelformatter.git'
 end
 
 target 'Tests', :exclusive => true do
   pod "MSSocketConnection", :path => "../"
+  pod 'CocoaLumberjack', '~> 1.9'
+  pod 'SHFileFunctionLevelFormatter', :git => 'git@bitbucket.org:simonheys/shfilefunctionlevelformatter.git'
 
   pod 'Specta'
   pod 'Expecta'

@@ -7,12 +7,19 @@
 //
 
 #import "MSAppDelegate.h"
+#import "SHFileFunctionLevelFormatter.h"
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
+#import "DDFileLogger.h"
 
 @implementation MSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    SHFileFunctionLevelFormatter *fileFunctionLevelFormatter = [SHFileFunctionLevelFormatter new];
+    [[DDTTYLogger sharedInstance] setLogFormatter:fileFunctionLevelFormatter];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     return YES;
 }
 							
