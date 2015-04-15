@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MSSocketConnection', :exclusive => true do
+  pod "MSSocketConnection", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "MSSocketConnection", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
